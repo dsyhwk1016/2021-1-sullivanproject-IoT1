@@ -1,8 +1,6 @@
 const int LED = 11;
 
 void setup() {
-  
-
 }
 
 void loop() {
@@ -10,5 +8,4 @@ void loop() {
     analogWrite(LED, t_high);
     delay(4);
   }
-
 }
