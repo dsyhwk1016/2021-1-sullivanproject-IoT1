@@ -15,10 +15,10 @@ void loop()
   delayMicroseconds(10);
   digitalWrite(TrigPin, LOW);
 
-  //초음파 수신(μs단위)
+  //초음파 수신
   float duration = pulseIn(EchoPin, HIGH);
 
-  //cm 거리 계산(초음파 속도 = 340m/s)
+  //물체와의 거리를 cm로 변환
   float distance = 340*duration / 10000 / 2;
   
   Serial.print("distance : ");
